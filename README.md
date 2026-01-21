@@ -62,25 +62,20 @@ etc.
 
 3. Follow the analysis workflow in the notebook
 
-## Methodology
+## Workflow
 
-1. **Exploratory Data Analysis (EDA)**
-   - Data loading and inspection
-   - Statistical summary
-   - Missing values analysis
-   - Feature distributions
-
-2. **Data Preprocessing**
-   - Handling missing values
-   - Feature engineering
-   - Encoding categorical variables
-   - Feature scaling
-
-3. **Model Development**
-   - Baseline models
-   - Advanced regression techniques
-   - Model evaluation and comparison
-
-4. **Prediction & Submission**
-   - Generate predictions
-   - Create submission file
+1. **Import Libraries** - Load required dependencies
+2. **Load Data** - Import train and test datasets
+3. **Exploratory Data Analysis** - Analyze distributions and missing values
+4. **Data Preprocessing**
+   - Handle missing values strategically
+   - Engineer new features (TotalSF, TotalBath, HouseAge, etc.)
+   - Correct skewed features with log transformation
+   - One-hot encode categorical variables
+5. **Model Training** - Train and compare multiple models:
+   - Ridge Regression
+   - Lasso Regression
+   - Random Forest
+   - Gradient Boosting
+6. **Generate Predictions** - Create submission file
+7. **Results Summary** - Visualize performance and feature importance
